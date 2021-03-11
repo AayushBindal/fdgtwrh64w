@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+<button class="button" onclick="vibrate(1000)"> vibrate </button>
+<button class="button" onclick="vibratePattern()"> vibratePattern </button>
+
+<script> function vibrate(ms){
+    navigator.vibrate(ms);
+} 
+
+function vibratePattern(){
+    navigator.vibrate([300, 100, 300, 100, 300]);
+}
+</script>
+
+</body>
+</html>
